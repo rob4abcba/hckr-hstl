@@ -4,6 +4,11 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
 class Bookings extends Component {
+  
+  getMealsScheduleYo() {
+    console.log("getMealsScheduleYo");
+
+  }
 
     render() {
         return (
@@ -20,7 +25,7 @@ class Bookings extends Component {
           rows="4"
           placeholder="Enter the date range for each hacker's stay (one range per line)"
         />
-        <Button variant="outlined" color="primary" className="block-center">Get Meals Schedule</Button>
+        <Button variant="outlined" color="primary" className="block-center" onClick={this.getMealsScheduleYo}>Get Meals Schedule</Button>
         </div>);
     }
 }
